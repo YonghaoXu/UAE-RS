@@ -1,5 +1,7 @@
 <h1 align="center">Universal Adversarial Examples in Remote Sensing: Methodology and Benchmark</h1>
 
+![](Figure/mixup_attack.png)
+
 This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper [Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org).
 
 ### Table of content
