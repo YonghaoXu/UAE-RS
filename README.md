@@ -71,6 +71,33 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [AID dataset](https://captain-whu.github.io/AID/)
   - [Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html)
   - [Zurich Summer dataset](https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset)
+- Data folder structure
+  - The data folder is structured as follows:
+```
+├── <THE-ROOT-PATH-OF-DATA>/
+│   ├── UCMerced_LandUse/     
+|   |   ├── Images/
+|   |   |   ├── agricultural/
+|   |   |   ├── airplane/
+|   |   |   |── ...
+│   ├── AID/     
+|   |   ├── Airport/
+|   |   ├── BareLand/
+|   |   |── ...
+│   ├── Vaihingen/     
+|   |   ├── img/
+|   |   ├── gt/
+|   |   ├── ...
+│   ├── Zurich/    
+|   |   ├── img/
+|   |   ├── gt/
+|   |   ├── ...
+│   ├── UAE-RS/    
+|   |   ├── UCM/
+|   |   ├── AID/
+|   |   ├── Vaihingen/
+|   |   ├── Zurich/
+```
 - Pretraining the models for scene classification
 ```
 CUDA_VISIBLE_DEVICES=0,1 python pretrain_cls.py --network 'alexnet' --dataID 1 --root_dir <THE-ROOT-PATH-OF-DATA>
