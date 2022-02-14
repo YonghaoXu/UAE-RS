@@ -230,4 +230,4 @@ The authors would like to thank Prof. Shawn Newsam for making the UCM dataset pu
 [Adversarial-Attacks-PyTorch](https://github.com/Harry24k/adversarial-attacks-pytorch)
 
 ### License
-This repo is distributed under [MIT License](https://github.com/YonghaoXu/UAE-RS/blob/main/LICENSE) and can be used for academic purposes only.
+This repo is distributed under [MIT License](https://github.com/YonghaoXu/UAE-RS/blob/main/LICENSE). The UAE-RS dataset can be used for academic purposes only.
