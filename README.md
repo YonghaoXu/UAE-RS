@@ -1,5 +1,8 @@
 <h1 align="center">Universal Adversarial Examples in Remote Sensing: Methodology and Benchmark</h1>
 
+<h3 align="center"> <a href="https://yonghaoxu.github.io/">Yonghao Xu</a>, <a href="http://pedram-ghamisi.com/">Pedram Ghamisi</a></h3>
+<br>
+
 ![](Figure/mixup_attack.png)
 
 This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper [Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org).
@@ -20,6 +23,17 @@ We collect the generated universal adversarial examples in the dataset named UAE
 
 To build UAE-RS, we use the *Mixcut-Attack* method to attack `ResNet18` with 1050 test samples from the **UCM dataset** and 5000 test samples from the **AID dataset** for scene classification, and use the *Mixup-Attack* method to attack `FCN-8s` with 5 test images from the **Vaihingen dataset** (image IDs: 11, 15, 28, 30, 34) and 5 test images from the **Zurich Summer** dataset (image IDs: 16, 17, 18, 19, 20) for semantic segmentation.
 
+![](Figure/ucm.png)
+<p align="center">Example images in the UCM dataset and the corresponding adversarial examples in the UAE-RS dataset.</p>
+
+![](Figure/aid.png)
+<p align="center">Example images in the AID dataset and the corresponding adversarial examples in the UAE-RS dataset.</p>
+
+![](Figure/vaihingen.png)
+<p align="center">Qualitative results of the black-box adversarial attacks from FCN-8s → SegNet on the Vaihingen dataset.</p>
+(a) The original clean test images in the Vaihingen dataset. (b) The corresponding adversarial examples in the UAE-RS dataset. (c) Segmentation results of SegNet on the clean images. (d) Segmentation results of SegNet on the adversarial images. (e) Ground-truth annotations.
+
+
 ### Supported methods and models <a name="method"></a>
 This repo contains implementations of black-box adversarial attacks for remote sensing data on both scene classification and semantic segmentation tasks.
 - Supported adversarial attack methods:
@@ -31,25 +45,25 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [Mixup-Attack](https://arxiv.org)
   - [Mixcut-Attack](https://arxiv.org)
 - Supported scene classification models:
-  - [AlexNet](https://arxiv.org/abs/1412.6572)
-  - [VGG11, VGG16, VGG19](https://arxiv.org/abs/1611.01236)
-  - [Inception-v3](https://arxiv.org/abs/1608.04644)
-  - [ResNet18, ResNet50, ResNet101](https://arxiv.org/abs/1901.08573)
-  - [ResNeXt50, ResNeXt101](https://arxiv.org/abs/2105.10304)
-  - [DenseNet121, DenseNet169, DenseNet201](https://arxiv.org)
-  - [RegNetX-400MF, RegNetX-8GF, RegNetX-16GF](https://arxiv.org)
+  - [AlexNet](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)
+  - [VGG11, VGG16, VGG19](https://arxiv.org/abs/1409.1556)
+  - [Inception-v3](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.html)
+  - [ResNet18, ResNet50, ResNet101](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html)
+  - [ResNeXt50, ResNeXt101](http://openaccess.thecvf.com/content_cvpr_2017/html/Xie_Aggregated_Residual_Transformations_CVPR_2017_paper.html)
+  - [DenseNet121, DenseNet169, DenseNet201](http://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html)
+  - [RegNetX-400MF, RegNetX-8GF, RegNetX-16GF](http://openaccess.thecvf.com/content_CVPR_2020/html/Radosavovic_Designing_Network_Design_Spaces_CVPR_2020_paper.html)
 - Supported semantic segmentation models:
-  - [FCN-32s, FCN-16s, FCN-8s](https://arxiv.org/abs/1412.6572)
-  - [DeepLab-v2, DeepLab-v3+](https://arxiv.org/abs/1611.01236)
-  - [SegNet](https://arxiv.org/abs/1608.04644)
-  - [ICNet](https://arxiv.org/abs/1901.08573)
-  - [ContextNet](https://arxiv.org/abs/2105.10304)
-  - [SQNet](https://arxiv.org)
-  - [PSPNet](https://arxiv.org)
-  - [U-Net](https://arxiv.org)
-  - [LinkNet](https://arxiv.org)
-  - [FRRNet-A](https://arxiv.org)
-  - [FRRNet-B](https://arxiv.org)
+  - [FCN-32s, FCN-16s, FCN-8s](http://openaccess.thecvf.com/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html)
+  - [DeepLab-v2](https://ieeexplore.ieee.org/abstract/document/7913730/)
+  - [DeepLab-v3+](http://openaccess.thecvf.com/content_ECCV_2018/html/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.html)
+  - [SegNet](https://ieeexplore.ieee.org/abstract/document/7803544/)
+  - [ICNet](http://openaccess.thecvf.com/content_ECCV_2018/html/Hengshuang_Zhao_ICNet_for_Real-Time_ECCV_2018_paper.html)
+  - [ContextNet](https://arxiv.org/abs/1805.04554)
+  - [SQNet](https://openreview.net/forum?id=S1uHiFyyg)
+  - [PSPNet](http://openaccess.thecvf.com/content_cvpr_2017/html/Zhao_Pyramid_Scene_Parsing_CVPR_2017_paper.html)
+  - [U-Net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)
+  - [LinkNet](https://ieeexplore.ieee.org/abstract/document/8305148/)
+  - [FRRNet-A, FRRNet-B](http://openaccess.thecvf.com/content_cvpr_2017/html/Pohlen_Full-Resolution_Residual_Networks_CVPR_2017_paper.html)
 ### Preparation
 - Package requirements: The scripts in this repo are tested with `torch==1.10` and `torchvision==0.11` using two NVIDIA Tesla V100 GPUs.
 - Remote sensing datasets used in this repo:
@@ -166,7 +180,7 @@ Semantic segmentation results of different deep neural networks on the clean and
 ### Paper
 [Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)
 
-Please cite our paper if you find it useful for your research.
+Please cite the following paper if you use the data or the code:
 
 ```
 @article{uaers,
@@ -189,4 +203,4 @@ The authors would like to thank Prof. Shawn Newsam for making the UCM dataset pu
 [Adversarial-Attacks-PyTorch](https://github.com/Harry24k/adversarial-attacks-pytorch)
 
 ### License
-This repo is distributed under [MIT License](https://github.com/YonghaoXu/UAE-RS/blob/main/LICENSE), which can be used for academic purposes only.
+This repo is distributed under [MIT License](https://github.com/YonghaoXu/UAE-RS/blob/main/LICENSE) and can be used for academic purposes only.
