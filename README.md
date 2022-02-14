@@ -1,4 +1,4 @@
-<h1 align="center">Universal Adversarial Examples in Remote Sensing:<br>Methodology and Benchmark</h1>
+<h1 align="center">Universal Adversarial Examples in Remote Sensing: Methodology and Benchmark</h1>
 
 This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper [Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org).
 
@@ -117,7 +117,7 @@ Scene classification results of different deep neural networks on the clean and 
 
 |               |       UCM       |                      |         |       AID       |                      |         |
 |:-------------:|:---------------:|:--------------------:|:-------:|:---------------:|:--------------------:|:-------:|
-|     Model     | Clearn Test Set | Adversarial Test Set |  OA Gap | Clearn Test Set | Adversarial Test Set |  OA Gap |
+|     Model     | Clean Test Set  | Adversarial Test Set |  OA Gap | Clean Test Set  | Adversarial Test Set |  OA Gap |
 |    AlexNet    |      90.28      |        30.86         | -59.42  |      89.74      |        18.26         | -71.48  |
 |     VGG11     |      94.57      |        26.57         | -68.00  |      91.22      |        12.62         | -78.60  |
 |     VGG16     |      93.04      |        19.52         | -73.52  |      90.00      |        13.46         | -76.54  |
@@ -145,7 +145,7 @@ Semantic segmentation results of different deep neural networks on the clean and
 
 |              |    Vaihingen    |                      |         |  Zurich Summer  |                      |         |
 |:------------:|:---------------:|:--------------------:|:-------:|:---------------:|:--------------------:|:-------:|
-|     Model    | Clearn Test Set | Adversarial Test Set | mF1 Gap | Clearn Test Set | Adversarial Test Set | mF1 Gap |
+|     Model    | Clean Test Set  | Adversarial Test Set | mF1 Gap | Clean Test Set  | Adversarial Test Set | mF1 Gap |
 |    FCN-32s   |      69.48      |        35.00         | -34.48  |      66.26      |        32.31         | -33.95  |
 |    FCN-16s   |      69.70      |        27.02         | -42.68  |      66.34      |        34.80         | -31.54  |
 |   FCN-8s     |      82.22      |        22.04         | -60.18  |      79.90      |        40.52         | -39.38  |
