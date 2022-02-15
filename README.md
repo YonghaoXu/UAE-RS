@@ -5,7 +5,7 @@
 
 ![](Figure/mixup_attack.png)
 
-This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper [Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org).
+This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper **[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)**.
 
 ### Table of content
  1. [Dataset](#dataset)
@@ -20,6 +20,8 @@ This is the official PyTorch implementation of the black-box adversarial attack 
 
 ### Dataset 
 We collect the generated universal adversarial examples in the dataset named UAE-RS, which is the first dataset that provides black-box adversarial samples in the remote sensing field.
+
+📡 **Download links:**  &nbsp;**[Google Drive](https://drive.google.com/file/d/1tbRSDJwhpk-uMYk2t-RUgC07x2wyUxAL/view?usp=sharing)** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **[Baidu NetDisk](https://pan.baidu.com/s/12SK3jfQ8-p_gU87YVEFMtw)** (Code: 8g1r)
 
 To build UAE-RS, we use the *Mixcut-Attack* method to attack `ResNet18` with 1050 test samples from the **UCM dataset** and 5000 test samples from the **AID dataset** for scene classification, and use the *Mixup-Attack* method to attack `FCN-8s` with 5 test images from the **Vaihingen dataset** (image IDs: 11, 15, 28, 30, 34) and 5 test images from the **Zurich Summer** dataset (image IDs: 16, 17, 18, 19, 20) for semantic segmentation.
 
@@ -36,7 +38,7 @@ To build UAE-RS, we use the *Mixcut-Attack* method to attack `ResNet18` with 105
 
 ### Supported methods and models <a name="method"></a>
 This repo contains implementations of black-box adversarial attacks for remote sensing data on both scene classification and semantic segmentation tasks.
-- Supported adversarial attack methods:
+- Adversarial attack methods:
   - [FGSM](https://arxiv.org/abs/1412.6572)
   - [I-FGSM](https://arxiv.org/abs/1611.01236)
   - [C&W](https://arxiv.org/abs/1608.04644)
@@ -44,7 +46,7 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [Jitter](https://arxiv.org/abs/2105.10304)
   - [Mixup-Attack](https://arxiv.org)
   - [Mixcut-Attack](https://arxiv.org)
-- Supported scene classification models:
+- Scene classification models:
   - [AlexNet](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)
   - [VGG11, VGG16, VGG19](https://arxiv.org/abs/1409.1556)
   - [Inception-v3](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.html)
@@ -52,7 +54,7 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [ResNeXt50, ResNeXt101](http://openaccess.thecvf.com/content_cvpr_2017/html/Xie_Aggregated_Residual_Transformations_CVPR_2017_paper.html)
   - [DenseNet121, DenseNet169, DenseNet201](http://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html)
   - [RegNetX-400MF, RegNetX-8GF, RegNetX-16GF](http://openaccess.thecvf.com/content_CVPR_2020/html/Radosavovic_Designing_Network_Design_Spaces_CVPR_2020_paper.html)
-- Supported semantic segmentation models:
+- Semantic segmentation models:
   - [FCN-32s, FCN-16s, FCN-8s](http://openaccess.thecvf.com/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html)
   - [DeepLab-v2](https://ieeexplore.ieee.org/abstract/document/7913730/)
   - [DeepLab-v3+](http://openaccess.thecvf.com/content_ECCV_2018/html/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.html)
@@ -205,7 +207,7 @@ Semantic segmentation results of different deep neural networks on the clean and
 |    FRRNetB   |      84.27      |        28.03         | -56.24  |      79.27      |        67.31         | -11.96  |
 
 ### Paper
-[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)
+**[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)**
 
 Please cite the following paper if you use the data or the code:
 
