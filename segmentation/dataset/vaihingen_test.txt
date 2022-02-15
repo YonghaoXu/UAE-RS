@@ -1,0 +1,5 @@
+top_mosaic_09cm_area11.tif
+top_mosaic_09cm_area15.tif
+top_mosaic_09cm_area28.tif
+top_mosaic_09cm_area30.tif
+top_mosaic_09cm_area34.tif
