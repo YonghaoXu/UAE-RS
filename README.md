@@ -5,7 +5,7 @@
 
 ![](Figure/mixup_attack.png)
 
-This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper **[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)**.
+This is the official PyTorch implementation of the black-box adversarial attack methods for remote sensing data in our paper **[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org/abs/2202.07054)**.
 
 ### Table of content
  1. [Dataset](#dataset)
@@ -44,8 +44,8 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [C&W](https://arxiv.org/abs/1608.04644)
   - [TPGD](https://arxiv.org/abs/1901.08573)
   - [Jitter](https://arxiv.org/abs/2105.10304)
-  - [Mixup-Attack](https://arxiv.org)
-  - [Mixcut-Attack](https://arxiv.org)
+  - [Mixup-Attack](https://arxiv.org/abs/2202.07054)
+  - [Mixcut-Attack](https://arxiv.org/abs/2202.07054)
 - Scene classification models:
   - [AlexNet](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)
   - [VGG11, VGG16, VGG19](https://arxiv.org/abs/1409.1556)
@@ -207,7 +207,7 @@ Semantic segmentation results of different deep neural networks on the clean and
 |    FRRNetB   |      84.27      |        28.03         | -56.24  |      79.27      |        67.31         | -11.96  |
 
 ### Paper
-**[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org)**
+**[Universal adversarial examples in remote sensing: Methodology and benchmark](https://arxiv.org/abs/2202.07054)**
 
 Please cite the following paper if you use the data or the code:
 
@@ -215,9 +215,7 @@ Please cite the following paper if you use the data or the code:
 @article{uaers,
   title={Universal adversarial examples in remote sensing: Methodology and benchmark}, 
   author={Xu, Yonghao and Ghamisi, Pedram},
-  journal={}, 
-  volume={},
-  pages={},
+  journal={arXiv preprint arXiv:2202.07054},
   year={2022},
 }
 ```
