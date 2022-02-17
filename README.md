@@ -1,6 +1,6 @@
 <h1 align="center">Universal Adversarial Examples in Remote Sensing: Methodology and Benchmark</h1>
 
-<h3 align="center"> <a href="https://yonghaoxu.github.io/">Yonghao Xu</a>, <a href="http://pedram-ghamisi.com/">Pedram Ghamisi</a></h3>
+<h3 align="center"> <a href="https://yonghaoxu.github.io/">Yonghao Xu</a> and <a href="http://pedram-ghamisi.com/">Pedram Ghamisi</a></h3>
 <br
  
 ![](Figure/mixup_attack.png)
