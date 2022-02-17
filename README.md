@@ -74,7 +74,7 @@ This repo contains implementations of black-box adversarial attacks for remote s
   - [UCM dataset](http://weegee.vision.ucmerced.edu/datasets/landuse.html)
   - [AID dataset](https://captain-whu.github.io/AID/)
   - [Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html)
-  - [Zurich Summer dataset](https://sites.google.com/site/michelevolpiresearch/data/zurich-dataset)
+  - [Zurich Summer dataset](https://zenodo.org/record/5914759 )
 - Data folder structure
   - The data folder is structured as follows:
 ```
