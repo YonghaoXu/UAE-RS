@@ -220,7 +220,7 @@ Please cite the following paper if you use the data or the code:
 @article{uaers,
   title={Universal adversarial examples in remote sensing: Methodology and benchmark}, 
   author={Xu, Yonghao and Ghamisi, Pedram},
-  journal={arXiv preprint arXiv:2202.07054},
+  journal={IEEE Trans. Geos. Remote Sens.},
   year={2022},
 }
 ```
