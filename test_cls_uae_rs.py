@@ -84,15 +84,15 @@ def main(args):
         target_model = models.densenet201(pretrained=False)  
         target_model.classifier = nn.Linear(1920, num_classes)        
     elif args.target_model=='inception':
-        target_model = models.inception_v3(pretrained=False, aux_logits=False)  
+        target_model = models.inception_v3(pretrained=True, aux_logits=False)  
         target_model.fc = torch.nn.Linear(target_model.fc.in_features, num_classes)
-    elif args.network=='regnet_x_400mf':
+    elif args.target_model=='regnet_x_400mf':
         target_model = models.regnet_x_400mf(pretrained=False)  
         target_model.fc = torch.nn.Linear(target_model.fc.in_features, num_classes)
-    elif args.network=='regnet_x_8gf':
+    elif args.target_model=='regnet_x_8gf':
         target_model = models.regnet_x_8gf(pretrained=False)  
         target_model.fc = torch.nn.Linear(target_model.fc.in_features, num_classes)
-    elif args.network=='regnet_x_16gf':
+    elif args.target_model=='regnet_x_16gf':
         target_model = models.regnet_x_16gf(pretrained=False)  
         target_model.fc = torch.nn.Linear(target_model.fc.in_features, num_classes)
          
