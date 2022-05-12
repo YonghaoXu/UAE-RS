@@ -53,6 +53,9 @@ def main(args):
     if args.target_model=='alexnet':
         target_model = models.alexnet(pretrained=False)
         target_model.classifier._modules['6'] = nn.Linear(4096, num_classes)    
+    elif args.target_model=='vgg11':
+        target_model = models.vgg11(pretrained=False)  
+        target_model.classifier._modules['6'] = nn.Linear(4096, num_classes)
     elif args.target_model=='vgg16':
         target_model = models.vgg16(pretrained=False)  
         target_model.classifier._modules['6'] = nn.Linear(4096, num_classes)
